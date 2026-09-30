@@ -1,0 +1,11 @@
+{
+  "sections": {
+    "grumbles_splash": {
+      "type": "grumbles-splash",
+      "settings": {}
+    }
+  },
+  "order": [
+    "grumbles_splash"
+  ]
+}
