@@ -6,5 +6,22 @@
     "theme_author": "ShootyQ",
     "theme_documentation_url": "https://github.com/ShootyQ/gusgrumble",
     "theme_support_url": "https://github.com/ShootyQ/gusgrumble"
+  },
+  {
+    "name": "Brand & Social",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon image",
+        "info": "Will be scaled to 32 x 32px"
+      },
+      {
+        "type": "image_picker",
+        "id": "share_image",
+        "label": "Social sharing image",
+        "info": "Displayed when your store link is shared on social media"
+      }
+    ]
   }
 ]

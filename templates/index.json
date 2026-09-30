@@ -2,6 +2,74 @@
   "sections": {
     "grumbles_splash": {
       "type": "grumbles-splash",
+      "blocks": {
+        "aisle_1": {
+          "type": "aisle",
+          "settings": {
+            "number": "01",
+            "title": "Walks & outings",
+            "quote": "“Yes. Again.<br>Get the leash.”",
+            "url": ""
+          }
+        },
+        "aisle_2": {
+          "type": "aisle",
+          "settings": {
+            "number": "02",
+            "title": "Toys & trouble",
+            "quote": "“Your shoes appreciate<br>the investment.”",
+            "url": ""
+          }
+        },
+        "aisle_3": {
+          "type": "aisle",
+          "settings": {
+            "number": "03",
+            "title": "Bowls & mealtime",
+            "quote": "“Dinner is already late.<br>Let’s not make it worse.”",
+            "url": ""
+          }
+        },
+        "aisle_4": {
+          "type": "aisle",
+          "settings": {
+            "number": "04",
+            "title": "Cleanup & grooming",
+            "quote": "“One of us has to<br>be presentable.”",
+            "url": ""
+          }
+        },
+        "faq_1": {
+          "type": "faq_item",
+          "settings": {
+            "question": "May I squeak the chickens?",
+            "answer": "You may. Once. Gus has a very generous definition of “once,” but you should not test it."
+          }
+        },
+        "faq_2": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does Gus actually like his customers?",
+            "answer": "He knows every dog by name and keeps the door open a little longer than he admits. Draw your own conclusions."
+          }
+        },
+        "faq_3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What’s his philosophy?",
+            "answer": "Useful things. Clear explanations. Dogs deserve better; humans require supervision."
+          }
+        }
+      },
+      "block_order": [
+        "aisle_1",
+        "aisle_2",
+        "aisle_3",
+        "aisle_4",
+        "faq_1",
+        "faq_2",
+        "faq_3"
+      ],
       "settings": {}
     }
   },

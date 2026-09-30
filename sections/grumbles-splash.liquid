@@ -1,32 +1,482 @@
-<style>
-.gg{--cream:#f4eedf;--green:#18382f;--ink:#23392f;--gold:#d5af67;background:var(--cream);color:var(--ink);font:16px/1.6 Arial,sans-serif;isolation:isolate}.gg *{box-sizing:border-box}.gg a{color:inherit;text-decoration:none}.gg a:focus-visible,.gg summary:focus-visible{outline:3px solid #bc682f;outline-offset:5px}.gg .eyebrow{font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}.gg .notice{text-align:center;background:var(--green);color:var(--cream);padding:9px 15px;font-size:12px;letter-spacing:.12em}.gg .nav{max-width:1440px;margin:auto;padding:25px 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #23392f24}.gg .brand{font:bold 29px/1 Georgia,serif;letter-spacing:-1px}.gg .brand span{display:block;font:10px Arial,sans-serif;letter-spacing:.29em;margin-top:9px;text-align:center}.gg .links{display:flex;gap:30px;font-size:14px}.gg .nav-shop{border-bottom:1px solid;padding-bottom:4px}.gg .hero{display:grid;grid-template-columns:1fr 1fr;max-width:1440px;margin:auto;min-height:700px}.gg .intro{padding:72px 8% 50px 10%;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;position:relative}.gg h1{font:normal clamp(58px,6.7vw,102px)/.98 Georgia,serif;letter-spacing:-.06em;margin:24px 0}.gg h1 em{font-weight:normal;color:#7b482d}.gg .intro p{max-width:370px;font-size:17px;line-height:1.7;margin:0 0 27px}.gg .actions{display:flex;gap:23px;align-items:center;flex-wrap:wrap}.gg .button{display:inline-flex;align-items:center;justify-content:center;background:var(--green);color:var(--cream);padding:15px 26px;font-weight:700;font-size:14px;transition:background .2s,transform .2s}.gg .button:hover{background:#315448;transform:translateY(-2px)}.gg .text-link{font-size:14px;border-bottom:1px solid;padding:5px 0}.gg .scribble{margin-top:30px!important;font:italic 16px Georgia,serif!important;color:#74664e}.gg .portrait{position:relative;min-height:700px;overflow:hidden;background:#6c4d2e}.gg .portrait img{position:absolute;width:100%;height:100%;object-fit:cover;object-position:50% 36%}.gg .portrait:after{content:'';position:absolute;inset:65% 0 0;background:linear-gradient(transparent,#100d08b8)}.gg .nameplate{position:absolute;z-index:1;bottom:29px;left:32px;color:white}.gg .nameplate strong{font:32px Georgia,serif;display:block}.gg .nameplate span{font-size:12px;letter-spacing:.09em}.gg .stamp{position:absolute;z-index:2;top:26px;right:24px;width:105px;height:105px;border-radius:50%;background:var(--cream);color:var(--green);border:1px solid var(--gold);box-shadow:0 0 0 6px var(--cream);display:grid;place-content:center;text-align:center;transform:rotate(9deg);font:italic 23px/1 Georgia,serif}.gg .stamp small{font:9px Arial,sans-serif;letter-spacing:.12em;margin:7px 0}.gg .ticker{background:var(--green);color:var(--cream);padding:19px 5%;display:flex;gap:25px;justify-content:space-around;flex-wrap:wrap;font:italic 18px Georgia,serif}.gg .ticker b{color:var(--gold);font-size:12px}.gg .aisles{max-width:1280px;margin:auto;padding:80px 5%}.gg .section-top{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:35px}.gg h2{font:normal clamp(34px,4vw,54px)/1.12 Georgia,serif;letter-spacing:-.035em;margin:12px 0}.gg .section-top p{max-width:270px;color:#6c6d5d;font-size:14px}.gg .grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #23392f30;border-bottom:1px solid #23392f30}.gg .aisle{padding:28px 23px 32px;border-right:1px solid #23392f30}.gg .aisle:first-child{padding-left:0}.gg .aisle:last-child{border:0}.gg .number{font:italic 28px Georgia,serif;color:#a08047}.gg h3{font:normal 25px/1.2 Georgia,serif;margin:24px 0 14px}.gg .aisle p{font-size:14px;color:#636553;line-height:1.7}.gg .story{background:#e8decb;display:grid;grid-template-columns:1fr 1fr;max-width:1440px;margin:auto}.gg .story img{display:block;width:100%;height:590px;object-fit:cover;object-position:50% 40%}.gg .story-copy{padding:65px 12%;display:flex;flex-direction:column;justify-content:center}.gg .story-copy p{font-size:16px;color:#536050}.gg .signature{font:italic 30px Georgia,serif;color:#7b482d;margin-top:15px}.gg .notes{max-width:1050px;padding:75px 6%;margin:auto}.gg details{border-bottom:1px solid #23392f33;padding:19px 0}.gg summary{cursor:pointer;font:23px Georgia,serif}.gg details p{color:#536050;max-width:700px;margin-bottom:5px}.gg .final{padding:58px 6%;background:var(--green);color:var(--cream);display:flex;justify-content:space-between;align-items:center;gap:25px}.gg .final p{color:#c5c9b7}.gg .final .button{background:var(--cream);color:var(--green)}.gg footer{padding:30px 6%;display:flex;justify-content:space-between;gap:20px;font-size:12px;color:#6c6d5d}.gg .preview-note{background:#fff9e8;border:1px solid #c1a969;padding:12px;margin:20px;font-size:14px}.gg dialog{max-width:440px;border:1px solid #b5a377;padding:30px;background:var(--cream);color:var(--ink)}.gg dialog::backdrop{background:#10251ecc}.gg dialog button{font:inherit;border:0;cursor:pointer}
-@media(min-width:1600px){.gg .hero{min-height:800px}.gg .portrait{min-height:800px}}
-@media(max-width:800px){.gg .nav{padding:22px 6%}.gg .links{gap:17px}.gg .links a:first-child{display:none}.gg .brand{font-size:25px}.gg .hero{min-height:0;grid-template-columns:1fr}.gg .intro{padding:42px 7% 34px}.gg h1{font-size:clamp(58px,12vw,85px);margin:18px 0}.gg .intro p{font-size:16px;max-width:440px}.gg .scribble{margin-top:20px!important;margin-bottom:0!important}.gg .portrait{min-height:540px}.gg .portrait img{object-position:50% 30%}.gg .ticker{gap:14px;font-size:15px}.gg .ticker b{display:none}.gg .aisles{padding:50px 7%}.gg .section-top{display:block}.gg .section-top p{max-width:none}.gg .grid{grid-template-columns:1fr 1fr}.gg .aisle{padding:23px 16px!important}.gg .aisle:nth-child(2){border-right:0}.gg .aisle:nth-child(-n+2){border-bottom:1px solid #23392f30}.gg .story{grid-template-columns:1fr}.gg .story img{height:430px}.gg .story-copy{padding:42px 7%}.gg .notes{padding:45px 7%}.gg .final{display:block;padding:40px 7%}.gg footer{flex-direction:column;padding:25px 7%;gap:7px}}
-@media(prefers-reduced-motion:reduce){.gg *{scroll-behavior:auto!important;transition:none!important}}
-</style>
-<div class="gg" id="grumbles-{{ section.id }}">
-<div class="notice">GOOD STUFF. GRUMPY SERVICE.</div>
-<nav class="nav" aria-label="Grumble’s navigation"><a class="brand" href="#grumbles-{{ section.id }}">Grumble’s<span>PET GOODS · GUS GRUMBLE, PROPRIETOR</span></a><div class="links"><a href="#aisles-{{ section.id }}">The good stuff</a><a href="#meet-gus-{{ section.id }}">Meet Gus</a><a class="nav-shop" href="{{ section.settings.shop_link | default: routes.all_products_collection_url }}">Shop the goods</a></div></nav>
-<section class="hero" aria-labelledby="gus-title-{{ section.id }}"><div class="intro"><span class="eyebrow">Your dog’s kind of shop.</span><h1 id="gus-title-{{ section.id }}">Good dogs.<br>Questionable<br><em>humans.</em></h1><p>Everyday dog goods from Gus Grumble.<br>He has opinions. You’re getting them anyway.</p><div class="actions"><a class="button" href="{{ section.settings.shop_link | default: routes.all_products_collection_url }}">Shop dog goods</a><a class="text-link" href="#meet-gus-{{ section.id }}">Meet the proprietor</a></div><p class="scribble">“Come in. Wipe your paws. Yes, you too.”</p></div><div class="portrait"><img src="{% if section.settings.hero_image != blank %}{{ section.settings.hero_image | image_url: width: 1600 }}{% else %}{{ 'gus-hero.jpg' | asset_url }}{% endif %}" alt="Gus Grumble, a scruffy Brussels griffon in a plaid shirt and apron, opening his warm wooden pet shop." width="1122" height="1402" fetchpriority="high"><div class="stamp"><small>THE PROPRIETOR</small>Gus<br>Grumble<small>RELUCTANTLY ONLINE</small></div><div class="nameplate"><strong>A little rough around the ruff.</strong><span>YOUR NEIGHBORHOOD GRUMP. YOUR DOG’S NEW FRIEND.</span></div></div></section>
-<div class="ticker"><span>For the muddy paws.</span><b>✦</b><span>The enthusiastic chewers.</span><b>✦</b><span>And their very patient humans.</span></div>
-<section class="aisles-{{ section.id }}" id="aisles-{{ section.id }}"><div class="section-top"><div><span class="eyebrow">A few of life’s necessities</span><h2>Dogs have priorities.</h2></div><p>Walk. Play. Eat. Make a mess.<br>Gus understands the assignment.</p></div><div class="grid"><article class="aisle"><span class="number">01</span><h3>Walks & outings</h3><p>“Yes. Again.<br>Get the leash.”</p></article><article class="aisle"><span class="number">02</span><h3>Toys & trouble</h3><p>“Your shoes appreciate<br>the investment.”</p></article><article class="aisle"><span class="number">03</span><h3>Bowls & mealtime</h3><p>“Dinner is already late.<br>Let’s not make it worse.”</p></article><article class="aisle"><span class="number">04</span><h3>Cleanup & grooming</h3><p>“One of us has to<br>be presentable.”</p></article></div></section>
-<section class="story" id="meet-gus-{{ section.id }}"><img src="{% if section.settings.story_image != blank %}{{ section.settings.story_image | image_url: width: 1200 }}{% else %}{{ 'gus-counter.jpg' | asset_url }}{% endif %}" alt="Gus at his shop counter giving a skeptical look beside a thoroughly destroyed stuffed duck." width="1122" height="1402" loading="lazy"><div class="story-copy"><span class="eyebrow">Meet the management</span><h2>A small shop.<br>A considerable<br>number of opinions.</h2><p>Gus believes dogs deserve useful things, humans deserve clear explanations, and nobody needs to “reimagine the fetch experience.”</p><p>He remembers your dog’s name. Yours? He’s working on it.</p><p>He’ll grumble when you arrive just after closing. Then he’ll unlock the door.</p><div class="signature">— Gus Grumble</div><span class="eyebrow" style="margin-top:14px">Proprietor. People person, allegedly.</span></div></section>
-<section class="notes"><span class="eyebrow">Notes from behind the counter</span><h2>Since you’re here.</h2><details><summary>May I squeak the chickens?</summary><p>You may. Once. Gus has a very generous definition of “once,” but you should not test it.</p></details><details><summary>Does Gus actually like his customers?</summary><p>He knows every dog by name and keeps the door open a little longer than he admits. Draw your own conclusions.</p></details><details><summary>What’s his philosophy?</summary><p>Useful things. Clear explanations. Dogs deserve better; humans require supervision.</p></details></section>
-<section class="final"><div><span class="eyebrow">That tail isn’t going to wag itself.</span><h2>Something for your good dog.</h2><p>Gus will pretend he’s not pleased you stopped by.</p></div><a class="button" href="{{ section.settings.shop_link | default: routes.all_products_collection_url }}">Take a look around</a></section>
-<footer><span>Grumble’s Pet Goods · Good stuff. Grumpy service.</span><span>Fictional proprietor. Very real dog people.</span></footer>
 
+{% comment %}
+  Grumble's Pet Goods - Splash & Storefront Landing Section
+{% endcomment %}
+
+<div class="gg" id="grumbles-{{ section.id }}">
+  {%- if section.settings.notice_text != blank -%}
+    <div class="notice">
+      {%- if section.settings.notice_link != blank -%}
+        <a href="{{ section.settings.notice_link }}">{{ section.settings.notice_text }}</a>
+      {%- else -%}
+        {{ section.settings.notice_text }}
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <nav class="nav" aria-label="Grumble’s navigation">
+    <a class="brand" href="{{ routes.root_url }}">
+      {{ section.settings.brand_name | default: "Grumble’s" }}
+      <span>{{ section.settings.brand_subtitle | default: "PET GOODS · GUS GRUMBLE, PROPRIETOR" }}</span>
+    </a>
+    <div class="links">
+      <a href="#aisles-{{ section.id }}">The good stuff</a>
+      <a href="#meet-gus-{{ section.id }}">Meet Gus</a>
+      <a class="nav-shop" href="{{ section.settings.shop_link | default: routes.all_products_collection_url }}">
+        {{ section.settings.shop_nav_text | default: "Shop the goods" }}
+      </a>
+      <a class="cart-link" href="{{ routes.cart_url }}" aria-label="Shopping Cart">
+        <span>Cart</span>
+        <span class="cart-badge">{{ cart.item_count }}</span>
+      </a>
+    </div>
+  </nav>
+
+  <section class="hero" aria-labelledby="gus-title-{{ section.id }}">
+    <div class="intro">
+      {%- if section.settings.hero_eyebrow != blank -%}
+        <span class="eyebrow">{{ section.settings.hero_eyebrow }}</span>
+      {%- endif -%}
+      <h1 id="gus-title-{{ section.id }}">
+        {{ section.settings.hero_heading | default: "Good dogs.<br>Questionable<br><em>humans.</em>" }}
+      </h1>
+      <p>
+        {{ section.settings.hero_subtext | default: "Everyday dog goods from Gus Grumble.<br>He has opinions. You’re getting them anyway." }}
+      </p>
+      <div class="actions">
+        <a class="button" href="{{ section.settings.shop_link | default: routes.all_products_collection_url }}">
+          {{ section.settings.hero_button_label | default: "Shop dog goods" }}
+        </a>
+        <a class="text-link" href="#meet-gus-{{ section.id }}">
+          {{ section.settings.hero_secondary_link_label | default: "Meet the proprietor" }}
+        </a>
+      </div>
+      {%- if section.settings.hero_scribble != blank -%}
+        <p class="scribble">{{ section.settings.hero_scribble }}</p>
+      {%- endif -%}
+    </div>
+    <div class="portrait">
+      <img
+        src="{% if section.settings.hero_image != blank %}{{ section.settings.hero_image | image_url: width: 1600 }}{% else %}{{ 'gus-hero.jpg' | asset_url }}{% endif %}"
+        alt="{{ section.settings.hero_image.alt | default: 'Gus Grumble, a scruffy Brussels griffon in a plaid shirt and apron, opening his warm wooden pet shop.' | escape }}"
+        width="1122"
+        height="1402"
+        fetchpriority="high"
+      >
+      <div class="stamp">
+        <small>{{ section.settings.stamp_top | default: "THE PROPRIETOR" }}</small>
+        {{ section.settings.stamp_title | default: "Gus<br>Grumble" }}
+        <small>{{ section.settings.stamp_bottom | default: "RELUCTANTLY ONLINE" }}</small>
+      </div>
+      <div class="nameplate">
+        <strong>{{ section.settings.nameplate_heading | default: "A little rough around the ruff." }}</strong>
+        <span>{{ section.settings.nameplate_subtext | default: "YOUR NEIGHBORHOOD GRUMP. YOUR DOG’S NEW FRIEND." }}</span>
+      </div>
+    </div>
+  </section>
+
+  {%- if section.settings.ticker_text_1 != blank -%}
+    <div class="ticker">
+      <span>{{ section.settings.ticker_text_1 }}</span>
+      {%- if section.settings.ticker_text_2 != blank -%}
+        <b>✦</b><span>{{ section.settings.ticker_text_2 }}</span>
+      {%- endif -%}
+      {%- if section.settings.ticker_text_3 != blank -%}
+        <b>✦</b><span>{{ section.settings.ticker_text_3 }}</span>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <!-- Dynamic Aisles Section -->
+  <section class="aisles" id="aisles-{{ section.id }}">
+    <div class="section-top">
+      <div>
+        <span class="eyebrow">{{ section.settings.aisles_eyebrow | default: "A few of life’s necessities" }}</span>
+        <h2>{{ section.settings.aisles_heading | default: "Dogs have priorities." }}</h2>
+      </div>
+      <p>{{ section.settings.aisles_subtext | default: "Walk. Play. Eat. Make a mess.<br>Gus understands the assignment." }}</p>
+    </div>
+
+    <div class="grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'aisle' -%}
+          {%- if block.settings.url != blank -%}
+            <a href="{{ block.settings.url }}" class="aisle" {{ block.shopify_attributes }}>
+          {%- else -%}
+            <div class="aisle" {{ block.shopify_attributes }}>
+          {%- endif -%}
+              <div>
+                <span class="number">{{ block.settings.number }}</span>
+                <h3>{{ block.settings.title }}</h3>
+              </div>
+              <p>{{ block.settings.quote }}</p>
+          {%- if block.settings.url != blank -%}
+            </a>
+          {%- else -%}
+            </div>
+          {%- endif -%}
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </section>
+
+  <!-- Featured Collection / Product Grid -->
+  {%- if section.settings.featured_collection != blank and section.settings.featured_collection.products_count > 0 -%}
+    {%- assign collection = section.settings.featured_collection -%}
+    <section class="featured-products">
+      <div class="section-top">
+        <div>
+          <span class="eyebrow">{{ section.settings.products_eyebrow | default: "Approved by Gus (reluctantly)" }}</span>
+          <h2>{{ section.settings.products_heading | default: "Goods on the shelves." }}</h2>
+        </div>
+        <p>{{ section.settings.products_subtext | default: "Tested against enthusiastic teeth and stubborn muddy paws." }}</p>
+      </div>
+
+      <div class="products-grid">
+        {%- for product in collection.products limit: section.settings.products_to_show -%}
+          <article class="product-card">
+            <div class="product-image-wrapper">
+              <a href="{{ product.url }}">
+                {%- if product.featured_image != blank -%}
+                  <img
+                    src="{{ product.featured_image | image_url: width: 600 }}"
+                    alt="{{ product.featured_image.alt | default: product.title | escape }}"
+                    loading="lazy"
+                    width="600"
+                    height="600"
+                  >
+                {%- else -%}
+                  {{ 'product-1' | placeholder_svg_tag }}
+                {%- endif -%}
+              </a>
+            </div>
+            <div>
+              <h3 class="product-title">
+                <a href="{{ product.url }}">{{ product.title }}</a>
+              </h3>
+              <div class="product-price">
+                {{ product.price | money }}
+                {%- if product.compare_at_price > product.price -%}
+                  <s>{{ product.compare_at_price | money }}</s>
+                {%- endif -%}
+              </div>
+            </div>
+            {%- if product.available -%}
+              <form method="post" action="{{ routes.cart_add_url }}">
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                <button type="submit" class="button product-btn">Add to cart</button>
+              </form>
+            {%- else -%}
+              <button class="button product-btn" disabled style="opacity: 0.6; cursor: not-allowed;">Sold out</button>
+            {%- endif -%}
+          </article>
+        {%- endfor -%}
+      </div>
+    </section>
+  {%- endif -%}
+
+  <!-- Story Section -->
+  <section class="story" id="meet-gus-{{ section.id }}">
+    <img
+      src="{% if section.settings.story_image != blank %}{{ section.settings.story_image | image_url: width: 1200 }}{% else %}{{ 'gus-counter.jpg' | asset_url }}{% endif %}"
+      alt="{{ section.settings.story_image.alt | default: 'Gus at his shop counter giving a skeptical look beside a thoroughly destroyed stuffed duck.' | escape }}"
+      width="1122"
+      height="1402"
+      loading="lazy"
+    >
+    <div class="story-copy">
+      <span class="eyebrow">{{ section.settings.story_eyebrow | default: "Meet the management" }}</span>
+      <h2>{{ section.settings.story_heading | default: "A small shop.<br>A considerable<br>number of opinions." }}</h2>
+      <p>{{ section.settings.story_p1 | default: "Gus believes dogs deserve useful things, humans deserve clear explanations, and nobody needs to “reimagine the fetch experience.”" }}</p>
+      <p>{{ section.settings.story_p2 | default: "He remembers your dog’s name. Yours? He’s working on it." }}</p>
+      <p>{{ section.settings.story_p3 | default: "He’ll grumble when you arrive just after closing. Then he’ll unlock the door." }}</p>
+      <div class="signature">{{ section.settings.story_signature | default: "— Gus Grumble" }}</div>
+      <span class="eyebrow" style="margin-top:14px">{{ section.settings.story_signoff | default: "Proprietor. People person, allegedly." }}</span>
+    </div>
+  </section>
+
+  <!-- Notes & FAQs Section -->
+  <section class="notes">
+    <span class="eyebrow">{{ section.settings.notes_eyebrow | default: "Notes from behind the counter" }}</span>
+    <h2>{{ section.settings.notes_heading | default: "Since you’re here." }}</h2>
+
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'faq_item' -%}
+        <details {{ block.shopify_attributes }}>
+          <summary>{{ block.settings.question }}</summary>
+          <p>{{ block.settings.answer }}</p>
+        </details>
+      {%- endif -%}
+    {%- endfor -%}
+  </section>
+
+  <!-- Newsletter Signup Section -->
+  <section class="newsletter-section">
+    <div class="newsletter-inner">
+      <span class="eyebrow">{{ section.settings.newsletter_eyebrow | default: "Unenthusiastic Correspondence" }}</span>
+      <h2>{{ section.settings.newsletter_heading | default: "Gus might send an email." }}</h2>
+      <p>{{ section.settings.newsletter_subtext | default: "New arrivals, store announcements, and zero inspirational dog quotes. We respect your inbox." }}</p>
+
+      {% form 'customer', class: 'newsletter-form-wrapper' %}
+        <input type="hidden" name="contact[tags]" value="newsletter">
+        {%- if form.posted_successfully? -%}
+          <div class="form-status form-status--success" tabindex="-1" autofocus>
+            {{ section.settings.newsletter_success | default: "You’re in. Gus is already regretting having a mailing list." }}
+          </div>
+        {%- else -%}
+          <div class="newsletter-form">
+            <input
+              id="NewsletterEmail--{{ section.id }}"
+              type="email"
+              name="contact[email]"
+              class="newsletter-input"
+              value="{{ form.email }}"
+              aria-required="true"
+              autocorrect="off"
+              autocapitalize="off"
+              autocomplete="email"
+              placeholder="Your email address"
+              required
+            >
+            <button type="submit" class="button newsletter-btn">
+              {{ section.settings.newsletter_button_text | default: "Sign up (reluctantly)" }}
+            </button>
+          </div>
+          {%- if form.errors -%}
+            <div class="form-status form-status--error">
+              {{ form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email }}
+            </div>
+          {%- endif -%}
+        {%- endif -%}
+      {% endform %}
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="final">
+    <div>
+      <span class="eyebrow">{{ section.settings.cta_eyebrow | default: "That tail isn’t going to wag itself." }}</span>
+      <h2>{{ section.settings.cta_heading | default: "Something for your good dog." }}</h2>
+      <p>{{ section.settings.cta_subtext | default: "Gus will pretend he’s not pleased you stopped by." }}</p>
+    </div>
+    <a class="button" href="{{ section.settings.shop_link | default: routes.all_products_collection_url }}">
+      {{ section.settings.cta_button_text | default: "Take a look around" }}
+    </a>
+  </section>
+
+  <footer>
+    <span>{{ section.settings.footer_left | default: "Grumble’s Pet Goods · Good stuff. Grumpy service." }}</span>
+    <span>{{ section.settings.footer_right | default: "Fictional proprietor. Very real dog people." }}</span>
+  </footer>
 </div>
+
 {% schema %}
 {
-  "name": "Grumble\u2019s splash page",
+  "name": "Grumble’s splash page",
   "tag": "section",
   "class": "grumbles-splash-section",
-  "limit": 1,
   "settings": [
+    {
+      "type": "header",
+      "content": "Announcement Bar"
+    },
+    {
+      "type": "text",
+      "id": "notice_text",
+      "label": "Notice text",
+      "default": "GOOD STUFF. GRUMPY SERVICE."
+    },
+    {
+      "type": "url",
+      "id": "notice_link",
+      "label": "Notice link (optional)"
+    },
+    {
+      "type": "header",
+      "content": "Header & Branding"
+    },
+    {
+      "type": "text",
+      "id": "brand_name",
+      "label": "Brand name",
+      "default": "Grumble’s"
+    },
+    {
+      "type": "text",
+      "id": "brand_subtitle",
+      "label": "Brand subtitle",
+      "default": "PET GOODS · GUS GRUMBLE, PROPRIETOR"
+    },
+    {
+      "type": "text",
+      "id": "shop_nav_text",
+      "label": "Shop nav link label",
+      "default": "Shop the goods"
+    },
+    {
+      "type": "url",
+      "id": "shop_link",
+      "label": "Shop button destination"
+    },
+    {
+      "type": "header",
+      "content": "Hero Section"
+    },
     {
       "type": "image_picker",
       "id": "hero_image",
       "label": "Gus hero image"
+    },
+    {
+      "type": "text",
+      "id": "hero_eyebrow",
+      "label": "Hero eyebrow",
+      "default": "Your dog’s kind of shop."
+    },
+    {
+      "type": "inline_richtext",
+      "id": "hero_heading",
+      "label": "Hero heading",
+      "default": "Good dogs.<br>Questionable<br><em>humans.</em>"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "hero_subtext",
+      "label": "Hero description",
+      "default": "Everyday dog goods from Gus Grumble.<br>He has opinions. You’re getting them anyway."
+    },
+    {
+      "type": "text",
+      "id": "hero_button_label",
+      "label": "Primary button label",
+      "default": "Shop dog goods"
+    },
+    {
+      "type": "text",
+      "id": "hero_secondary_link_label",
+      "label": "Secondary link label",
+      "default": "Meet the proprietor"
+    },
+    {
+      "type": "text",
+      "id": "hero_scribble",
+      "label": "Hero scribble",
+      "default": "“Come in. Wipe your paws. Yes, you too.”"
+    },
+    {
+      "type": "text",
+      "id": "stamp_top",
+      "label": "Stamp top label",
+      "default": "THE PROPRIETOR"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "stamp_title",
+      "label": "Stamp center title",
+      "default": "Gus<br>Grumble"
+    },
+    {
+      "type": "text",
+      "id": "stamp_bottom",
+      "label": "Stamp bottom label",
+      "default": "RELUCTANTLY ONLINE"
+    },
+    {
+      "type": "text",
+      "id": "nameplate_heading",
+      "label": "Nameplate headline",
+      "default": "A little rough around the ruff."
+    },
+    {
+      "type": "text",
+      "id": "nameplate_subtext",
+      "label": "Nameplate subtitle",
+      "default": "YOUR NEIGHBORHOOD GRUMP. YOUR DOG’S NEW FRIEND."
+    },
+    {
+      "type": "header",
+      "content": "Ticker Bar"
+    },
+    {
+      "type": "text",
+      "id": "ticker_text_1",
+      "label": "Ticker item 1",
+      "default": "For the muddy paws."
+    },
+    {
+      "type": "text",
+      "id": "ticker_text_2",
+      "label": "Ticker item 2",
+      "default": "The enthusiastic chewers."
+    },
+    {
+      "type": "text",
+      "id": "ticker_text_3",
+      "label": "Ticker item 3",
+      "default": "And their very patient humans."
+    },
+    {
+      "type": "header",
+      "content": "Aisles / Categories"
+    },
+    {
+      "type": "text",
+      "id": "aisles_eyebrow",
+      "label": "Aisles eyebrow",
+      "default": "A few of life’s necessities"
+    },
+    {
+      "type": "text",
+      "id": "aisles_heading",
+      "label": "Aisles heading",
+      "default": "Dogs have priorities."
+    },
+    {
+      "type": "inline_richtext",
+      "id": "aisles_subtext",
+      "label": "Aisles subtext",
+      "default": "Walk. Play. Eat. Make a mess.<br>Gus understands the assignment."
+    },
+    {
+      "type": "header",
+      "content": "Featured Products"
+    },
+    {
+      "type": "collection",
+      "id": "featured_collection",
+      "label": "Featured collection"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 2,
+      "max": 8,
+      "step": 1,
+      "default": 4,
+      "label": "Products to show"
+    },
+    {
+      "type": "text",
+      "id": "products_eyebrow",
+      "label": "Products eyebrow",
+      "default": "Approved by Gus (reluctantly)"
+    },
+    {
+      "type": "text",
+      "id": "products_heading",
+      "label": "Products heading",
+      "default": "Goods on the shelves."
+    },
+    {
+      "type": "text",
+      "id": "products_subtext",
+      "label": "Products subtext",
+      "default": "Tested against enthusiastic teeth and stubborn muddy paws."
+    },
+    {
+      "type": "header",
+      "content": "Story Section"
     },
     {
       "type": "image_picker",
@@ -34,14 +484,249 @@
       "label": "Gus counter image"
     },
     {
-      "type": "url",
-      "id": "shop_link",
-      "label": "Shop button destination"
+      "type": "text",
+      "id": "story_eyebrow",
+      "label": "Story eyebrow",
+      "default": "Meet the management"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "story_heading",
+      "label": "Story heading",
+      "default": "A small shop.<br>A considerable<br>number of opinions."
+    },
+    {
+      "type": "textarea",
+      "id": "story_p1",
+      "label": "Paragraph 1",
+      "default": "Gus believes dogs deserve useful things, humans deserve clear explanations, and nobody needs to “reimagine the fetch experience.”"
+    },
+    {
+      "type": "textarea",
+      "id": "story_p2",
+      "label": "Paragraph 2",
+      "default": "He remembers your dog’s name. Yours? He’s working on it."
+    },
+    {
+      "type": "textarea",
+      "id": "story_p3",
+      "label": "Paragraph 3",
+      "default": "He’ll grumble when you arrive just after closing. Then he’ll unlock the door."
+    },
+    {
+      "type": "text",
+      "id": "story_signature",
+      "label": "Signature",
+      "default": "— Gus Grumble"
+    },
+    {
+      "type": "text",
+      "id": "story_signoff",
+      "label": "Sign-off label",
+      "default": "Proprietor. People person, allegedly."
+    },
+    {
+      "type": "header",
+      "content": "Notes & FAQs"
+    },
+    {
+      "type": "text",
+      "id": "notes_eyebrow",
+      "label": "Notes eyebrow",
+      "default": "Notes from behind the counter"
+    },
+    {
+      "type": "text",
+      "id": "notes_heading",
+      "label": "Notes heading",
+      "default": "Since you’re here."
+    },
+    {
+      "type": "header",
+      "content": "Newsletter Signup"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_eyebrow",
+      "label": "Newsletter eyebrow",
+      "default": "Unenthusiastic Correspondence"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_heading",
+      "label": "Newsletter heading",
+      "default": "Gus might send an email."
+    },
+    {
+      "type": "text",
+      "id": "newsletter_subtext",
+      "label": "Newsletter subtext",
+      "default": "New arrivals, store announcements, and zero inspirational dog quotes. We respect your inbox."
+    },
+    {
+      "type": "text",
+      "id": "newsletter_button_text",
+      "label": "Newsletter button text",
+      "default": "Sign up (reluctantly)"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_success",
+      "label": "Success message",
+      "default": "You’re in. Gus is already regretting having a mailing list."
+    },
+    {
+      "type": "header",
+      "content": "Final Call To Action"
+    },
+    {
+      "type": "text",
+      "id": "cta_eyebrow",
+      "label": "CTA eyebrow",
+      "default": "That tail isn’t going to wag itself."
+    },
+    {
+      "type": "text",
+      "id": "cta_heading",
+      "label": "CTA heading",
+      "default": "Something for your good dog."
+    },
+    {
+      "type": "text",
+      "id": "cta_subtext",
+      "label": "CTA subtext",
+      "default": "Gus will pretend he’s not pleased you stopped by."
+    },
+    {
+      "type": "text",
+      "id": "cta_button_text",
+      "label": "CTA button text",
+      "default": "Take a look around"
+    },
+    {
+      "type": "header",
+      "content": "Footer"
+    },
+    {
+      "type": "text",
+      "id": "footer_left",
+      "label": "Footer left note",
+      "default": "Grumble’s Pet Goods · Good stuff. Grumpy service."
+    },
+    {
+      "type": "text",
+      "id": "footer_right",
+      "label": "Footer right note",
+      "default": "Fictional proprietor. Very real dog people."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "aisle",
+      "name": "Aisle Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number / Code",
+          "default": "01"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Aisle title",
+          "default": "Walks & outings"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "quote",
+          "label": "Quote / Description",
+          "default": "“Yes. Again.<br>Get the leash.”"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Link destination (collection or page)"
+        }
+      ]
+    },
+    {
+      "type": "faq_item",
+      "name": "Note / FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "May I squeak the chickens?"
+        },
+        {
+          "type": "textarea",
+          "id": "answer",
+          "label": "Answer",
+          "default": "You may. Once. Gus has a very generous definition of “once,” but you should not test it."
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Grumble\u2019s splash page"
+      "name": "Grumble’s splash page",
+      "blocks": [
+        {
+          "type": "aisle",
+          "settings": {
+            "number": "01",
+            "title": "Walks & outings",
+            "quote": "“Yes. Again.<br>Get the leash.”"
+          }
+        },
+        {
+          "type": "aisle",
+          "settings": {
+            "number": "02",
+            "title": "Toys & trouble",
+            "quote": "“Your shoes appreciate<br>the investment.”"
+          }
+        },
+        {
+          "type": "aisle",
+          "settings": {
+            "number": "03",
+            "title": "Bowls & mealtime",
+            "quote": "“Dinner is already late.<br>Let’s not make it worse.”"
+          }
+        },
+        {
+          "type": "aisle",
+          "settings": {
+            "number": "04",
+            "title": "Cleanup & grooming",
+            "quote": "“One of us has to<br>be presentable.”"
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "May I squeak the chickens?",
+            "answer": "You may. Once. Gus has a very generous definition of “once,” but you should not test it."
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "Does Gus actually like his customers?",
+            "answer": "He knows every dog by name and keeps the door open a little longer than he admits. Draw your own conclusions."
+          }
+        },
+        {
+          "type": "faq_item",
+          "settings": {
+            "question": "What’s his philosophy?",
+            "answer": "Useful things. Clear explanations. Dogs deserve better; humans require supervision."
+          }
+        }
+      ]
     }
   ]
 }
